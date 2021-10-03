@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { QuestsRoutingModule } from './quests-routing.module';
-import { QuestsHomeComponent } from './components/quests-home/quests-home.component';
+import { QuestsHomeComponent } from 'app/modules/quests/components/quests-home/quests-home.component';
+import { QuestsRoutingModule } from 'app/modules/quests/quests-routing.module';
+import { SharedModule } from 'app/modules/shared/shared.module';
+import { MaterialModule } from 'app/modules/material/material.module';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { QuestsHomeComponent } from './components/quests-home/quests-home.compon
   ],
   imports: [
     CommonModule,
-    QuestsRoutingModule
+    QuestsRoutingModule,
+    MaterialModule,
+    SharedModule
   ]
 })
 export class QuestsModule { }
