@@ -16,7 +16,7 @@ export class QuestProvider {
         },
         {
             "id": 1,
-            "title": "Valami"
+            "title": "Horgászbot"
         }
     ]`;
 }
