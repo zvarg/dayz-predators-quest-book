@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Quest } from 'app/modules/shared/models/quest';
 
 @Component({
   selector: 'quest',
   templateUrl: './quest.component.html',
   styleUrls: ['./quest.component.scss']
 })
-export class QuestComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class QuestComponent {
+  @Input() quest: Quest;
 }

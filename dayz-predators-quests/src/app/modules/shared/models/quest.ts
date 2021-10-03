@@ -1,3 +1,4 @@
 export class Quest {
-    title = 'Test title'
+    id: number;
+    title: string;
 }
