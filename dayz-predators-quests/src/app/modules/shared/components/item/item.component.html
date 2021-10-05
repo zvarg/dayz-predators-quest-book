@@ -1,0 +1,3 @@
+<img *ngIf="item.thumbnail" class="item-thumbnail" [src]="item.thumbnail">
+<mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon>
+<span class="item-name">{{ item.name }}</span>

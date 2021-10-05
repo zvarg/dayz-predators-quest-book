@@ -13,22 +13,22 @@ export class QuestProvider {
         {
             "id": 0,
             "title": "Csere fenőkőhöz",
-            "description": "Kedvező csere élezőkövekhez a Sekélyesnél. 3 naponta ismétlődik",
+            "description": "Kedvező csere élezőkövekhez a Sekélyesnél! 3 naponta ismétlődik",
             "requirements": [
                 {
-                    "value": {
+                    "item": {
                         "id": 1000,
                         "name": "Cső",
-                        "avatarUrl": "",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/9/91/LeadPipe.png",
                         "wikiUrl": ""
                     },
                     "count": 1
                 },
                 {
-                    "value": {
+                    "item": {
                         "id": 1001,
                         "name": "Kőkés",
-                        "avatarUrl": "",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/9/9c/ImprovisedKnife.png",
                         "wikiUrl": ""
                     },
                     "count": 1
@@ -36,10 +36,10 @@ export class QuestProvider {
             ],
             "rewards": [
                 {
-                    "value": {
+                    "item": {
                         "id": 1002,
                         "name": "Fenőkő",
-                        "avatarUrl": "",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/9/9f/Whetstone.png",
                         "wikiUrl": "https://dayz.fandom.com/wiki/Sharpening_Stone"
                     },
                     "count": 2

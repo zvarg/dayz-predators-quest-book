@@ -5,7 +5,7 @@ export class Requirement {
     /**
      * The required `Item`
      */
-    value: Item;
+    item: Item;
 
     /**
      * The number of required `Item` to complete the `Requirement`

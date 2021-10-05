@@ -7,16 +7,32 @@
     <mat-card-title>{{ quest.title }}</mat-card-title>
     <mat-card-subtitle>Quest</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image
-    src="https://static.wikia.nocookie.net/dayz_gamepedia/images/9/9f/Whetstone.png/revision/latest?cb=20190109013236">
+  <img mat-card-image class="quest-image" [src]="questThumbnail">
   <mat-card-content>
     <p>
       {{ quest.description }}
     </p>
+
   </mat-card-content>
 
-  <cooldown class="quest-card-content-item" [cooldown]="quest.cooldown" [maticon]="'timelapse'" [tooltip]="'Cooldown: Teljesítés után mennyi idő múlva lehet újra felvenni'"></cooldown>
-  <cooldown class="quest-card-content-item" [cooldown]="quest.expiration" [maticon]="'hourglass_empty'" [tooltip]="'Expiration: Elfogadás után mikor jár le'"></cooldown>
+  <div>
+    <span class="quest-header2">Követelmények</span>
+    <mat-list>
+      <mat-list-item class="requirement-or-reward" *ngFor="let requirement of quest.requirements; let i = index">
+        <requirement [requirement]="requirement"></requirement>
+        <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider>
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+  
+  <cooldown class="quest-card-content-item" [cooldown]="quest.cooldown" [maticon]="'timelapse'"
+    [tooltip]="'Cooldown: Teljesítés után mennyi idő múlva lehet újra felvenni'"></cooldown>
+  <cooldown class="quest-card-content-item" [cooldown]="quest.expiration" [maticon]="'hourglass_empty'"
+    [tooltip]="'Expiration: Elfogadás után mikor jár le'"></cooldown>
+
+
+
 
   <!-- <location [location]="quest.location"></location> -->
 

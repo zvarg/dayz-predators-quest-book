@@ -1,12 +1,23 @@
+.quest-header2 {
+    font-size: larger;
+}
+
 .quest-thumbnail {
     font-size: 36px;
 }
 
+.quest-image {
+    text-align: center;
+    justify-content: center;
+    //max-width: 200px;
+}
+
 .quest-card {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .quest-card-content-item {
+    margin-top: 50px;
     margin-right: 15px;
 }
 

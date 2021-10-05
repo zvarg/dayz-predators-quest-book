@@ -1,6 +1,6 @@
 export class Item {
     id: number;
     name: string;
-    avatarUrl: string;
+    thumbnail: string;
     wikiUrl: string;
 }

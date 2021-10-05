@@ -5,12 +5,16 @@ import { MaterialModule } from 'app/modules/material/material.module';
 import { QuestProvider } from 'app/modules/shared/providers/quest.provider';
 import { CooldownComponent } from './components/cooldown/cooldown.component';
 import { LocationComponent } from './components/location/location.component';
+import { ItemComponent } from './components/item/item.component';
+import { RequirementComponent } from './components/requirement/requirement.component';
 
 @NgModule({
   declarations: [
     QuestComponent,
     CooldownComponent,
-    LocationComponent
+    LocationComponent,
+    ItemComponent,
+    RequirementComponent
   ],
   providers: [
     QuestProvider
@@ -21,7 +25,9 @@ import { LocationComponent } from './components/location/location.component';
   ],
   exports: [
     QuestComponent,
-    CooldownComponent
+    CooldownComponent,
+    ItemComponent,
+    RequirementComponent
   ]
 })
 export class SharedModule { }
