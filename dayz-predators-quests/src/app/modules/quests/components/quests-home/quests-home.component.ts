@@ -13,17 +13,7 @@ export class QuestsHomeComponent implements OnInit {
 
   quests: Quest[];
 
-  ngOnInit(): void {
-    const qs: Array<Quest> = [{
-      id: 0,
-      title: 'Élezőkés'
-    }, {
-      id: 1,
-      title: 'Valami'
-    }];
-
-    console.log(JSON.stringify(qs));
-
+  ngOnInit(): void {    
     this.questsProvider.all().subscribe(
       response => { this.quests = response }
     );

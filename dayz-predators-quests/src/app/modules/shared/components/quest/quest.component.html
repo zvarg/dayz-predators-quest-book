@@ -1,1 +1,29 @@
-<mat-card class="quest-card">{{ quest.title }}</mat-card>
+<mat-card class="quest-card">
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon class="quest-thumbnail">grade</mat-icon>
+    </div>
+
+    <mat-card-title>{{ quest.title }}</mat-card-title>
+    <mat-card-subtitle>Quest</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image
+    src="https://static.wikia.nocookie.net/dayz_gamepedia/images/9/9f/Whetstone.png/revision/latest?cb=20190109013236">
+  <mat-card-content>
+    <p>
+      {{ quest.description }}
+    </p>
+  </mat-card-content>
+
+  <cooldown class="quest-card-content-item" [cooldown]="quest.cooldown" [maticon]="'timelapse'" [tooltip]="'Cooldown: Teljesítés után mennyi idő múlva lehet újra felvenni'"></cooldown>
+  <cooldown class="quest-card-content-item" [cooldown]="quest.expiration" [maticon]="'hourglass_empty'" [tooltip]="'Expiration: Elfogadás után mikor jár le'"></cooldown>
+
+  <!-- <location [location]="quest.location"></location> -->
+
+
+  <!--       
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+</mat-card>

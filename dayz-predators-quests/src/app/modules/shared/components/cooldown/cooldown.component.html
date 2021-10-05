@@ -1,0 +1,4 @@
+<span matTooltip="{{tooltip}}">
+    <mat-icon class="mat-icon-adjust">{{ maticon }}</mat-icon>
+    &nbsp;<span>{{ cooldown.quantity }}</span>&nbsp;<span *nfIf="cooldown.unit == 'Never'">{{ cooldown.unit }}</span>
+</span>
