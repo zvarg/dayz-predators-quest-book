@@ -7,7 +7,7 @@
     <mat-card-title>{{ quest.title }}</mat-card-title>
     <mat-card-subtitle>Quest</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image class="quest-image" [src]="questThumbnail">
+  <!-- <img mat-card-image class="quest-image" [src]="questThumbnail"> -->
   <mat-card-content>
     <p>
       {{ quest.description }}
@@ -19,6 +19,16 @@
     <span class="quest-header2">Követelmények</span>
     <mat-list>
       <mat-list-item class="requirement-or-reward" *ngFor="let requirement of quest.requirements; let i = index">
+        <requirement [requirement]="requirement"></requirement>
+        <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+  <div>
+    <span class="quest-header2">Jutalmak</span>
+    <mat-list>
+      <mat-list-item class="requirement-or-reward" *ngFor="let requirement of quest.rewards; let i = index">
         <requirement [requirement]="requirement"></requirement>
         <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider>
       </mat-list-item>
