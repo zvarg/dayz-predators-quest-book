@@ -1,4 +1,4 @@
 <!-- <img *ngIf="item.thumbnail" class="item-thumbnail" [src]="item.thumbnail"> -->
 <!-- <mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon> -->
 <mat-icon class="mat-icon-adjust">image</mat-icon>
-<span class="item-name">{{ item.name }}</span>
+<span class="item-name">{{ item.name }}</span>&nbsp;<span *ngIf="item.madeBySelf" class="item-name">(Saját készítésű)</span>&nbsp;

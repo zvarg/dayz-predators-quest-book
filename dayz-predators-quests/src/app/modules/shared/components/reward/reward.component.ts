@@ -7,5 +7,5 @@ import { Reward } from 'app/modules/shared/models/reward';
   styleUrls: ['./reward.component.scss']
 })
 export class RewardComponent {
-  @Input() requirement: Reward;
+  @Input() reward: Reward;
 }
