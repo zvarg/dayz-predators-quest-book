@@ -642,6 +642,181 @@ export class QuestProvider {
                 "quantity": 0,
                 "unit": "Never"
             }
+        },
+        {
+            "id": 11,
+            "title": "Szerencse",
+            "description": "Kötözd be a sebeid háromszor és vegyél be egy antibiotikum tablettát úgy, hogy előtte nem voltál beteg.",
+            "requirements": [
+                {
+                    "item": {
+                        "id": 1035,
+                        "name": "Sebkötözés",
+                        "thumbnail": "",
+                        "wikiUrl": ""
+                    },
+                    "count": 3
+                }
+            ],
+            "rewards": [
+                {
+                    "item": {
+                        "id": 1011,
+                        "name": "Tetracycline",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/2/26/Tetracycline_Antibiotics.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Tetracycline_Pills"
+                    },
+                    "count": 1
+                }
+            ],
+            "isRepeatable": true,
+            "location": {
+                "name": "Otmel",
+                "locationUrl": "https://dayz.ginfo.gg/#c=-72;83;5"
+            },
+            "cooldown": {
+                "quantity": 3,
+                "unit": "Day"
+            },
+            "expiration": {
+                "quantity": 0,
+                "unit": "Never"
+            }
+        },
+        {
+            "id": 12,
+            "title": "Túlélési kísérletek",
+            "description": "Vágj fel egy kakast",
+            "requirements": [
+                {
+                    "item": {
+                        "id": 1039,
+                        "name": "Kakas",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/2/2c/Rooster.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Rooster"
+                    },
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "item": {
+                        "id": 1006,
+                        "name": "Kőkés",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/9/9c/ImprovisedKnife.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Stone_Knife",
+                        "madeBySelf": true
+                    },
+                    "count": 1
+                }
+            ],
+            "isRepeatable": true,
+            "location": {
+                "name": "Otmel",
+                "locationUrl": "https://dayz.ginfo.gg/#c=-72;83;5"
+            },
+            "cooldown": {
+                "quantity": 3,
+                "unit": "Day"
+            },
+            "expiration": {
+                "quantity": 0,
+                "unit": "Never"
+            }
+        },
+        {
+            "id": 13,
+            "title": "Legyen túlélő",
+            "description": "Kevés feladat értékes csomagért.",
+            "requirements": [
+                {
+                    "item": {
+                        "id": 1040,
+                        "name": "Törj el egy hosszú botot kicsikre",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/4/4e/Ashwood_stick.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Long_Wooden_Stick"
+                    },
+                    "count": 1
+                },
+                {
+                    "item": {
+                        "id": 1041,
+                        "name": "Gyújts újra egy épp kialudt tüzet",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/5/53/Fireplace.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Fireplace"
+                    },
+                    "count": 1
+                },
+                {
+                    "item": {
+                        "id": 1042,
+                        "name": "Igyál kútból",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/5/53/Fireplace.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Fireplace"
+                    },
+                    "count": 3
+                },
+                {
+                    "item": {
+                        "id": 1042,
+                        "name": "Szedj le egy bokrot",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/a/af/SambucusBush_5a.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Sambucus_Bush"
+                    },
+                    "count": 1
+                },
+                {
+                    "item": {
+                        "id": 1042,
+                        "name": "Fejts követ",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/d/d4/Stone.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/Stone"
+                    },
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "item": {
+                        "id": 1045,
+                        "name": "MK II",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/0/0d/MKII.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/MK_II"
+                    },
+                    "count": 1
+                },
+                {
+                    "item": {
+                        "id": 1046,
+                        "name": "MK II tár (10 töltényes)",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/d/d6/AmmoBox_22_50Rnd.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/.22_LR_Rounds"
+                    },
+                    "count": 1
+                },
+                {
+                    "item": {
+                        "id": 1047,
+                        "name": ".22 LR töltény csomag",
+                        "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/7/7d/Ammo_22.png",
+                        "wikiUrl": "https://dayz.fandom.com/wiki/.22_LR_Rounds"
+                    },
+                    "count": 1
+                }
+            ],
+            "isRepeatable": true,
+            "location": {
+                "name": "Otmel",
+                "locationUrl": "https://dayz.ginfo.gg/#c=-72;83;5"
+            },
+            "cooldown": {
+                "quantity": 3,
+                "unit": "Day"
+            },
+            "expiration": {
+                "quantity": 0,
+                "unit": "Never"
+            }
         }
     ]`;
 }
