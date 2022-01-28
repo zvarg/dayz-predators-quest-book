@@ -1,4 +1,34 @@
-<!-- <img *ngIf="item.thumbnail" class="item-thumbnail" [src]="item.thumbnail"> -->
-<!-- <mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon> -->
-<mat-icon class="mat-icon-adjust">image</mat-icon>
-<span class="item-name">{{ item.name }}</span>&nbsp;<span *ngIf="item.madeBySelf" class="item-name">(Saját készítésű)</span>&nbsp;
+<span class="inline-block thumbnail-container">
+    <img *ngIf="item.thumbnail" class="thumbnail" [src]="item.thumbnail">
+    <mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon>
+</span>
+<span class="inline-block name-container">
+    <span>{{ item.name }}</span>
+    <span *ngIf="item.madeBySelf" [matTooltip]="'Saját készítésű'">        
+        <mat-icon class="mat-icon-adjust">pan_tool</mat-icon>
+    </span>
+</span>
+
+<!-- <mat-icon class="mat-icon-adjust">image</mat-icon>
+<span class="item-name">{{ item.name }}</span>&nbsp;<span *ngIf="item.madeBySelf" class="item-name">(Saját készítésű)</span>&nbsp; -->
+
+<!-- <span class="floating d1 thumbnail">
+        <img *ngIf="item.thumbnail" class="item-thumbnail" [src]="item.thumbnail">
+        <mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon>
+    </span>
+    <span class="floating d2">
+        <span class="item-name">{{ item.name }}</span>
+        <span *ngIf="item.madeBySelf" class="item-name"> (Saját készítésű)</span>
+        
+    </span> -->
+<!-- <div class="float-my-children">
+    <div>
+        <img *ngIf="item.thumbnail" class="item-thumbnail" [src]="item.thumbnail">
+        <mat-icon *ngIf="!item.thumbnail" class="mat-icon-adjust">image</mat-icon>
+    </div>
+    
+    <span class="item-name">{{ item.name }}</span>
+    <span *ngIf="item.madeBySelf" class="item-name">(Saját készítésű)</span>
+
+</div> -->
+<!-- <mat-icon class="mat-icon-adjust">image</mat-icon> -->

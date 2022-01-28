@@ -1,9 +1,21 @@
-.item-thumbnail {
-    max-width: 50px;
-    max-height: 50px;
+.thumbnail {
+    max-height: 40px;
+    max-width: 100%;
 }
 
-
-.item-name {
-    margin-top: -35px;
+.thumbnail-container {
+    width: 40px;
 }
+
+.name-container {
+    margin-left: 5px;
+}
+
+// .item-thumbnail {
+//     max-width: 50px;
+//     max-height: 50px;
+// }
+
+// .item-name {
+//     margin-top: -35px;
+// }

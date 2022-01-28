@@ -269,7 +269,7 @@ export class QuestProvider {
                 {
                     "item": {
                         "id": 1017,
-                        "name": "Kodein tabletta (fájdalomcsillapító)",
+                        "name": "Kodein tabletta",
                         "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/4/45/Painkillers.png",
                         "wikiUrl": "hhttps://static.wikia.nocookie.net/dayz_gamepedia/images/4/45/Painkillers.png"
                     },
@@ -280,7 +280,7 @@ export class QuestProvider {
                 {
                     "item": {
                         "id": 1018,
-                        "name": "Kísérleti gyógyszer a vírus ellen (piros)",
+                        "name": "Z vírus gyógyszer (piros)",
                         "thumbnail": "",
                         "wikiUrl": ""
                     },
@@ -732,7 +732,7 @@ export class QuestProvider {
                 {
                     "item": {
                         "id": 1040,
-                        "name": "Törj el egy hosszú botot kicsikre",
+                        "name": "Törj el egy hosszú",
                         "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/4/4e/Ashwood_stick.png",
                         "wikiUrl": "https://dayz.fandom.com/wiki/Long_Wooden_Stick"
                     },
@@ -741,7 +741,7 @@ export class QuestProvider {
                 {
                     "item": {
                         "id": 1041,
-                        "name": "Gyújts újra egy épp kialudt tüzet",
+                        "name": "Gyújts újra kialudt tüzet",
                         "thumbnail": "https://static.wikia.nocookie.net/dayz_gamepedia/images/5/53/Fireplace.png",
                         "wikiUrl": "https://dayz.fandom.com/wiki/Fireplace"
                     },

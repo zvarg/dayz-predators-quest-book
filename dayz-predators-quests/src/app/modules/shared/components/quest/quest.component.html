@@ -18,9 +18,9 @@
   <div>
     <span class="quest-header2">Követelmények</span>
     <mat-list>
-      <mat-list-item class="requirement-or-reward" *ngFor="let requirement of quest.requirements; let i = index">
+      <mat-list-item *ngFor="let requirement of quest.requirements; let i = index">
         <requirement [requirement]="requirement"></requirement>
-        <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider>
+        <!-- <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider> -->
       </mat-list-item>
     </mat-list>
   </div>
@@ -28,9 +28,9 @@
   <div>
     <span class="quest-header2">Jutalmak</span>
     <mat-list>
-      <mat-list-item class="requirement-or-reward" *ngFor="let requirement of quest.rewards; let i = index">
+      <mat-list-item *ngFor="let requirement of quest.rewards; let i = index">
         <requirement [requirement]="requirement"></requirement>
-        <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider>
+        <!-- <mat-divider *ngIf="i < quest.requirements.length - 1"></mat-divider> -->
       </mat-list-item>
     </mat-list>
 

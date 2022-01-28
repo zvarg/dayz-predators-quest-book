@@ -13,7 +13,7 @@ export class QuestsHomeComponent implements OnInit {
 
   quests: Quest[];
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
     this.questsProvider.all().subscribe(
       response => { this.quests = response }
     );
